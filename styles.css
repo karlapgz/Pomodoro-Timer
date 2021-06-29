@@ -55,7 +55,7 @@ a {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 30px 20px 0 0;
+    margin: 30px 20px 0;
     background-color: #000;
     color: #fff;
 }
@@ -74,4 +74,20 @@ a {
 
 .fas {
     margin: 10px 10px;
+}
+
+@media (max-width: 414px) {
+    h1 { 
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    nav {
+        padding: 20px 30px
+    }
+    
 }
