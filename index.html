@@ -7,25 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d795562729.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Pomodoro Timer</title>
 </head>
 
 <body>
-    <section class="container">
+    <nav>
         <h1>Pomodoro Timer</h1>
-        <div class="image">
-            <img id="image-froggy" src="" alt="">
+        <div class="music">
+            <a href="#"><i class="fas fa-play" id="play"></i></a>
+            <a href="#"><i class="fas fa-pause" id="pause"></i></a>
         </div>
+        <ul>
+            <li><a href="index.html">Work</a></li>
+            <li>Break</li>
+        </ul>
+    </nav>
 
-        <span id="minutes">25</span>
-        <span>:</span>
-        <span id="seconds">00</span>
+    <section class="container">
+        <section>
+            <div class="image">
+                <img id="image-froggy" src="" alt="">
+            </div>
 
-        <div class="buttons">
-            <button class="btn start">Start</button>
-            <button class="btn reset">Reset</button>
-        </div>
+            <span id="minutes">25</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+
+            <div class="buttons">
+                <button class="btn start">Start</button>
+                <button class="btn reset">Reset</button>
+            </div>
+        </section>
     </section>
     <script src="main.js"></script>
 </body>

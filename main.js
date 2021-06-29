@@ -1,11 +1,17 @@
-let btns = document.querySelectorAll(".btn");
+let play = document.getElementById("play"),
+    pause = document.getElementById("pause")
+    audio = new Audio('music-lofi.mp3');
+
+let btns = document.querySelectorAll(".btn"),
+    btnStart = document.querySelector(".start");
+
 let minute = document.getElementById("minutes"),
-    seconds = document.getElementById("seconds");
-let btnStart = document.querySelector(".start");
+    seconds = document.getElementById("seconds"),
+    min = 25,
+    sec = 60;
+
 let img = document.getElementById("image-froggy");
 let st;
-let min = 25;
-let sec = 60;
 
  btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -25,6 +31,9 @@ let sec = 60;
         }
     });
  });
+
+play.addEventListener('click', playMusic);
+pause.addEventListener('click', pauseMusic);
 
  function start() {
     sec--;
@@ -55,4 +64,12 @@ let sec = 60;
 
  function stop(st) {
     clearTimeout(st);
+ }
+
+ function playMusic() {
+    audio.play();
+ }
+
+ function pauseMusic() {
+    audio.pause();
  }
